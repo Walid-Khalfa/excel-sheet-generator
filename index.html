@@ -16,8 +16,8 @@
         <input type="number" class="rows" placeholder="Enter number of rows">
         <input type="number" class="columns" placeholder="Enter number of columns">
         <div class="btns">
-            <button onclick="generateTable()">Generate</button>
-            <button onclick="ExportToExcel('xlsx')">Export</button>
+            <button data-action="generate">Generate</button>
+            <button data-action="export">Export</button>
         </div>
     </div>
     <div class="table">
@@ -27,5 +27,7 @@
     </div>
 </body>
 <script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
 <script src="./script.js"></script>
 </html>
